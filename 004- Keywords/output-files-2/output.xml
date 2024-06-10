@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.9 on darwin)" generated="2024-06-05T22:25:59.279739" rpa="false" schemaversion="5">
+<suite id="s1" name="Example-Return-Values" source="/Users/victoria/Documents/Work/Learning/Python/PythonTest/tau-intro-robot-framework/004- Keywords/example-return-values.robot">
+<test id="s1-t1" name="My Addition Test" line="4">
+<kw name="Add">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-06-05T22:25:59.298369" level="INFO">${value} = 5</msg>
+<var>${value}</var>
+<arg>${value1} + ${value2}</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.298186" elapsed="0.000204"/>
+</kw>
+<return>
+<value>${value}</value>
+<status status="PASS" start="2024-06-05T22:25:59.298437" elapsed="0.000028"/>
+</return>
+<msg time="2024-06-05T22:25:59.298549" level="INFO">${sum} = 5</msg>
+<var>${sum}</var>
+<arg>2</arg>
+<arg>3</arg>
+<status status="PASS" start="2024-06-05T22:25:59.297820" elapsed="0.000743"/>
+</kw>
+<kw name="Should Be Equal As Integers" owner="BuiltIn">
+<msg time="2024-06-05T22:25:59.298760" level="INFO">Argument types are:
+&lt;class 'str'&gt;
+&lt;class 'int'&gt;</msg>
+<arg>5</arg>
+<arg>${sum}</arg>
+<doc>Fails if objects are unequal after converting them to integers.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.298659" elapsed="0.000144"/>
+</kw>
+<status status="PASS" start="2024-06-05T22:25:59.297492" elapsed="0.001403"/>
+</test>
+<test id="s1-t2" name="My Test Case" line="8">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-06-05T22:25:59.299283" level="INFO">${nickName} = Victoria</msg>
+<var>${nickName}</var>
+<arg>Victoria</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.299194" elapsed="0.000104"/>
+</kw>
+<kw name="Print Profile">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n__Profile__</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.299628" elapsed="0.000151"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>First Name: "${firstName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.299847" elapsed="0.000103"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Last Name: "${lastName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.300013" elapsed="0.000099"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Title: "${title}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.300177" elapsed="0.000091"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Twitter Handle: "${twitterHandle}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.300326" elapsed="0.000093"/>
+</kw>
+<arg>${nickName}</arg>
+<arg>Williams</arg>
+<arg>Tester</arg>
+<arg>abiolaa__</arg>
+<status status="PASS" start="2024-06-05T22:25:59.299418" elapsed="0.001039"/>
+</kw>
+<kw name="Change Nickname">
+<return>
+<value>${new}</value>
+<status status="PASS" start="2024-06-05T22:25:59.300713" elapsed="0.000019"/>
+</return>
+<msg time="2024-06-05T22:25:59.300809" level="INFO">${nickName} = Abby</msg>
+<var>${nickName}</var>
+<arg>${nickName}</arg>
+<arg>Abby</arg>
+<status status="PASS" start="2024-06-05T22:25:59.300563" elapsed="0.000260"/>
+</kw>
+<kw name="Print Profile">
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n__Profile__</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.301133" elapsed="0.000078"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>First Name: "${firstName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.301274" elapsed="0.000098"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Last Name: "${lastName}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.301429" elapsed="0.000091"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Title: "${title}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.301576" elapsed="0.000094"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>Twitter Handle: "${twitterHandle}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2024-06-05T22:25:59.301727" elapsed="0.000092"/>
+</kw>
+<arg>${nickName}</arg>
+<arg>Williams</arg>
+<arg>Tester</arg>
+<arg>abiolaa__</arg>
+<status status="PASS" start="2024-06-05T22:25:59.300935" elapsed="0.000919"/>
+</kw>
+<status status="PASS" start="2024-06-05T22:25:59.299018" elapsed="0.002922"/>
+</test>
+<status status="PASS" start="2024-06-05T22:25:59.281140" elapsed="0.021039"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Example-Return-Values">Example-Return-Values</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-06-05T22:25:59.277353" level="WARN">Error in file '/Users/victoria/Documents/Work/Learning/Python/PythonTest/tau-intro-robot-framework/004- Keywords/example-return-values.robot' on line 18: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-06-05T22:25:59.277525" level="WARN">Error in file '/Users/victoria/Documents/Work/Learning/Python/PythonTest/tau-intro-robot-framework/004- Keywords/example-return-values.robot' on line 22: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+</errors>
+</robot>

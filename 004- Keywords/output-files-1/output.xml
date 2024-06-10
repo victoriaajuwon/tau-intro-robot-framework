@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.9 on darwin)" generated="2024-06-05T14:26:28.019948" rpa="false" schemaversion="5">
+<suite id="s1" name="Example-Settings" source="/Users/victoria/Documents/Work/Learning/Python/PythonTest/tau-intro-robot-framework/004- Keywords/example-settings.robot">
+<test id="s1-t1" name="Create an Invoice" line="5">
+<kw name="Comment" owner="BuiltIn">
+<arg>This is my first RobotFramework test case!</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" start="2024-06-05T14:26:28.280475" elapsed="0.000157"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-05T14:26:28.280910" level="INFO">Opening browser 'chrome' to base url 'http://inv.beaufortfairmont.com/'.</msg>
+<arg>http://inv.beaufortfairmont.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-05T14:26:28.280776" elapsed="22.147402"/>
+</kw>
+<status status="PASS" start="2024-06-05T14:26:28.279818" elapsed="22.152862"/>
+</test>
+<status status="PASS" start="2024-06-05T14:26:28.021141" elapsed="22.412303"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Example-Settings">Example-Settings</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

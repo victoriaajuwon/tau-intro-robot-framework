@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.10.9 on darwin)" generated="2024-06-06T13:01:39.788896" rpa="false" schemaversion="5">
+<suite id="s1" name="First-Test-Case" source="/Users/victoria/Documents/Work/Learning/Python/PythonTest/tau-intro-robot-framework/005-TestCases/first-test-case.robot">
+<test id="s1-t1" name="Check invoice manager page" line="5">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-06T13:01:39.919588" level="INFO">Opening browser 'chrome' to base url 'http://inv.beaufortfairmont.com/'.</msg>
+<arg>http://inv.beaufortfairmont.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-06T13:01:39.919377" elapsed="7.217139"/>
+</kw>
+<kw name="Comment" owner="BuiltIn">
+<arg>Check we're on the invoice manager page</arg>
+<doc>Displays the given messages in the log file as keyword arguments.</doc>
+<status status="PASS" start="2024-06-06T13:01:47.139823" elapsed="0.000830"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<msg time="2024-06-06T13:01:47.157692" level="INFO">Current page contains text 'Invoice Manager'.</msg>
+<arg>Invoice Manager</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="PASS" start="2024-06-06T13:01:47.140895" elapsed="0.016887"/>
+</kw>
+<status status="PASS" start="2024-06-06T13:01:39.918702" elapsed="7.239642"/>
+</test>
+<status status="PASS" start="2024-06-06T13:01:39.789761" elapsed="7.369016"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="First-Test-Case">First-Test-Case</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
